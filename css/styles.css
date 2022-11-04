@@ -23,6 +23,8 @@
     align-items: center;   
     justify-content: center;
     flex-wrap: wrap;
+    width:1170px;
+    justify-content: space-around;
     margin: 30px;
 }
 
@@ -99,7 +101,14 @@ font-weight: 500;
      letter-spacing: 0.02em;
     color: var(--accent-color);
 }
-    
+
+.footer-layout{
+    width: 1200px;
+padding-top: 60px;
+padding-bottom: 60px;
+padding-left: 15px;
+padding-right: 15px;}
+}
 
 .footer-address {
     display: block;
@@ -199,7 +208,8 @@ color: var(--white-text-color);
 .features{
     display: flex;
     flex-direction: row;
-    align-items: center;   
+    align-items: center; 
+    justify-content: space-evenly; 
 
 }
 
