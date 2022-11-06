@@ -133,7 +133,7 @@ margin-left: auto;
     line-height: calc(14/16);
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
-    margin-right: 50px;
+    padding: 32px 0;
 }
 
 .contact-link:hover,
@@ -212,7 +212,7 @@ margin-left: auto;
 
 .features-list {
     display: flex;
-   
+   justify-content: center;
 
 }
 
@@ -259,6 +259,7 @@ margin-right: 30px;
 
 .what-we-do-list{
     display: flex;
+    justify-content: center;
 }
 
 .what-we-do-item:not(:last-child) {
@@ -268,7 +269,6 @@ margin-right: 30px;
 /*OUR TEAM*/
 
 .our-team-section {
-    padding-top: 0;
     background-color: var(--secondary-background);
 }
 
@@ -284,6 +284,15 @@ margin-right: 30px;
 
 .our-team-list {
     display: flex;
+    justify-content: center;
+}
+.our-team-item{
+    width: 270px;
+background-color: #FFFFFF;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+0px 1px 1px rgba(0, 0, 0, 0.14),
+0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
 }
 
 .our-team-item:not(:last-child) {
@@ -300,11 +309,12 @@ margin-right: 30px;
     color: var(--main-text-color);
 }
 
-
+.our-team-item-description{
+    padding: 30px 0px;
+}
 
 .employee-name {
-    padding-top: 30px;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
     font-size: 16px;
     line-height: calc(19/16);
     text-align: center;
@@ -349,6 +359,7 @@ margin-right: 30px;
     font-size: 14px;
     line-height: calc(24/14);
     color: var(--white-text-color);
+    width: 231px;
 }
 
 .footer-addreess:hover,
@@ -380,21 +391,18 @@ margin-right: 30px;
 
 .portfolio-button-list{
     display:flex;
-flex-direction: row;
-width: 462px;
-margin-left: auto;
-margin-right:auto ;
+justify-content: center;
 margin-bottom: 50px;
 }
 
 
 
 .portfolio-button-item:not(:last-child){
-    padding-right: 8px;
+    margin-right: 8px;
 }
 
 
-.protfolio-work-button {
+.portfolio-work-button {
     font-family: Roboto;
     font-size: 16px;
     font-weight: 500;
@@ -402,15 +410,17 @@ margin-bottom: 50px;
     text-align: center;
     color: var(--main-text-color);
     background: #F5F4FA;;
-    padding: 26px 6px;
+    padding: 6px 26px;
     border: none;
+    border-radius: 4px;
 
 }
 
-.protfolio-work-button:hover,
-.protfolio-work-button:focus {
+.portfolio-work-button:hover,
+.portfolio-work-button:focus {
     background-color: var(--accent-color);
-  color: var(--white-text-color)
+  color: var(--white-text-color);
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     
 }
 
@@ -430,7 +440,6 @@ margin-bottom: 50px;
 
 .portfolio-image-item {
     background: #FFFFFF;
-    border: 1px solid #EEEEEE;
     margin-bottom: 30px;
 }
 
@@ -438,13 +447,19 @@ margin-bottom: 50px;
     margin-right: 30px;
 }
 
+.card-contact{
+    padding: 20px;
+    border-left: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+}
+
 .project-type {
     font-weight: 400;
     font-size: 16px;
     line-height: calc(30/16);
     color: var(--main-title-color);
-    padding-left: 24px;
-    padding-bottom: 20px;
+
 }
 
 
@@ -453,7 +468,5 @@ margin-bottom: 50px;
     font-size: 18px;
     line-height: calc(36/18);
     letter-spacing: 0.06em;
-    padding-top: 20px;
-    padding-bottom: 4px;
-    padding-left: 24px;
+    margin-bottom: 4px;
 }
